@@ -1,0 +1,24 @@
+Mauricio S. Perez
+CSC18a - 48984
+Professor Paul J. Conrad
+Assignment 2: Problem 3.37 (Factorial)
+
+In this assignment, we looked for three values:
+
+	- n!   (N factorial)
+	- e    (aproximations of e)
+	- e^x (Calculation of e to the x power)
+
+Trough the use of loops, we are able to break down the problem, destroy a complicated algorithm into simple multiplication, division, and addition peaces. When we put them together, we can then get the total value of an otherwise complicated piece of code.
+
+For the most part, each problem build upon itself. In order to calculate "e", for instance, one needed to first calculate the factorial. The factorial was found with a simple while loop, which multiplied the count each time minus the next count, untill it finished looping:
+ 			ex. 5! = 5*4*3*2*1
+Once we had that loop, it was not hard to implement it into an addition. In finding e, we simply needed to execute (x^0)/x!, and added an x number of times. We broke down this problem to calculate the factorial, then inverse the result by dividing 1 by the factorial, then in a controlled while loop, repeat this process with a decremented count for all instances greater than 0.
+
+NOTE: in all cases, 0!, e to 0 terms, e^0, all equal 0. So this too must be checked. We dont execute the while loop, and go straight to an output.
+
+Finally for the instance e^x: we simply compile all that we have done, with an extra instance: (x^x)/(x!). We create two while loops to calculate x^x and x! independently to later divide each, so that the controlling while loop can add this division to the answer, until all instances of x are added.
+
+This was a complicated assignment. As a first assignment, you hit the ground running with loops and prints to prompt, along with nuances of the language. Once theise small hurdles are overcome, the problem is not as hard when you can see how to break it down. Good Assignment.
+
+Extra Note: This code dose not test for errors, meaning that if you input a character, or a negative number, the program can crash.
