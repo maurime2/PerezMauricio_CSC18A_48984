@@ -3,8 +3,10 @@
    Proffesor Paul J. Conrad
    
    
-   Assignment 6: Problem 18.14 (Palindromes)
- 
+	Assignment 6: Problem 18.14 (Palindromes)
+	GitHub:
+	https://github.com/maurime2/PerezMauricio_CSC18A_48984/tree/master/Hmwk/Assignment6
+	
    Problem:  	A palindrome is a string that is spelled the same way forward
 				and backward. Some examples of palindromes are “radar,”
 				“able was i ere i saw elba” and 
