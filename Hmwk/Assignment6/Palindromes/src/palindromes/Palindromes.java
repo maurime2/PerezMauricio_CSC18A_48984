@@ -52,7 +52,7 @@ public class Palindromes {
         //Prepare String Array to be manipulated
         Copy = Copy.replaceAll("\\s+","");          //Removes All Spaces.
         Copy = Copy.toLowerCase();                  //Converts All to Lowercase.
-        Copy = Copy.replaceAll("[^0-9a-zA-Z ]", "");//Removes All Punctuation.
+        Copy = Copy.replaceAll("[^0-9a-z]", "");//Removes All Punctuation.
         System.out.println("Fixed String             : "+Copy);
         
         //Manupulate Copy to be reversed
