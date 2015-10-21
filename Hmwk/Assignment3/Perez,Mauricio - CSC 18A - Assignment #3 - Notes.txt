@@ -1,0 +1,62 @@
+Mauricio S. Perez
+CSC18a - 48984
+Professor Paul J. Conrad
+Assignment 3: Problem 5.27 (Greatest Common Divisor)
+
+In this assignment, we looked the greatest common divisor (GCD) of two 
+non negative integers. We were to achieve this in two ways:
+
+	1. Write a recursive function that resulted in the GCD of both numbers.
+	2. Write a function with While Loop, resulting in the GCD of both numbers.
+	
+In order to do this task, one must keep track of a few instances:
+	
+	- One of the two values is Zero.		:	2 Separate Instances
+	- Both values are the same.				:	1 Instance
+	- One value is greater than the other.	:	2 Separate Instances
+	---------------------------------------------------------------------------
+	Total Instances Checked: 5
+	
+Initially I wrote the problem down as shown in the book, and completely failed
+to recognise the Professors instructions of writing both functions. I wrote a
+while loop that calculated the GCD, tested for each instance (as mentioned 
+above),without said functions.
+
+My variables used for my Program are:
+
+		int value1	:	Holds First Value imputed by user.
+        int value2	:	Holds Second Value imputed by user.
+        int count	:	Keeps Track of GCD to test against the two Values
+        int count1	:	""	""	""	""	""	""	""	""	"", (in functions)
+        int test1	:	Unused
+        int test2	:	Unused
+        int GCD		:	Will hold GCD of while loop
+        int GCD1	:	Will hold GCD of while loop (in functions)
+		
+Because the assignment called for a while loop to be used within a function, It
+was simple to create a function, pass all my parameters, and re run the while
+loop exactly like it dose in main. Minus the prompts, the while in the function
+it is pretty much line for line the same code block as the while in main.
+At the end, it simply returns "g" (GCD within the function).
+
+The Recursion Function was a problem. At first I could not think of how 
+or when I could call the the function, in the process of finding the GCD. I 
+concluded that I would not be able to come up with something better than my 
+while loop, and precoded to implement recursion at the end of the decrement.
+Count "c" decrements, it calls itself right after, and continues the process of
+finding GCD again. This continues until the recursion finds the GCD, then 
+proceeds to return GCD. The problem is, that it returns it in all of the 
+instances that it attempted to find GCD. At the end of the recursion, there
+will be a return for every time it was called!!!
+
+Recursion seems costly to me. What I mean by this is that if you are not
+careful, recursion could return something awful while wasting resources.
+I am aware that my implementation is not the best. My while loop in the
+recursive function still holds the initial test for the instances where 
+any of the values are 0, even though I know that by this point, no values
+equalling zero will ever execute my recursive or my other function. It
+is left their in case either of this functions ever get recycled into another
+program.
+
+Assignment 3 was fun, Recursion returns are not understood fully as of yet.
+Questions To Follow.
