@@ -30,6 +30,18 @@
             
             Write a test app named InvoiceTest that demonstrates class Invoice’s 
             capabilities.
+
+    Write Up:
+                NOT FINISHED. NEED TEST CLASS "InvoiceTest".
+
+                The classes work. With initial inputs, Invoice class creates 
+                their part number, part description, quantity and price per
+                item.
+
+                getInvoiceAmount also works as it should. The class only 
+                multiplys the quantity by the ppi of the item, giving an overal
+                total value of the inventory.
+
  */
 //Libraries
 package invoiceclass;
@@ -43,9 +55,6 @@ public class InvoiceClass {
     public static void main(String[] args) {
         // create a Scanner object to obtain input from the command window
         Scanner input = new Scanner(System.in);
-
-        //Declare Variables
-        
         
          //Create two account objects
         Invoice item1 = new Invoice("001","To Nail",30,30.20);
@@ -54,20 +63,17 @@ public class InvoiceClass {
         item1.setquantity(item1.quantity);
         item1.setppItem(item1.ppItem);
 
-        
+        //Get Account Objects
         System.out.println(item1.getpartNumber());
         System.out.println(item1.getpartDescription());
         System.out.println(item1.getquantity());
-        System.out.println(item1.getppItem());
+        System.out.printf("%.2f%n",item1.getppItem());
 
 
-        //Totals
+        //Test Get Invoice Amount
         getInvoiceAmount total1 = new getInvoiceAmount(item1.quantity,item1.ppItem);
         total1.setMult();
-        System.out.println(total1.getMult());
-        
-        
-        //System.out.println(item1.getppItem());
+        System.out.printf("%.2f%n",total1.getMult());
         
     }//Main End
     
