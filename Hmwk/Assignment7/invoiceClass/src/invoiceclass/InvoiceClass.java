@@ -12,10 +12,11 @@
 
             Create a class called Invoice that a hardware store might use to 
             represent an invoice for an item sold at the store. An Invoice
-            should include four pieces of information as instance variables—a
-            part number (type String), a part description (type String), a
-            quantity of the item being purchased (type int) and a price per item
-            (double). 
+            should include four pieces of information as instance variables:
+                - A part number (type String).
+                - A part description (type String).
+                - A quantity of the item being purchased (type int).
+                - A price per item (double). 
 
             Your class should have a constructor that initializes the four 
             instance variables. Provide a set and a get method for each instance
@@ -29,14 +30,25 @@
             InvoiceTest that demonstrates class Invoice’s capabilities.
  */
 //Libraries
-package invoice;
+package invoiceclass;
+//Utility Scanner
+import java.util.Scanner; 
 
 //Invoice Class
-public class Invoice {
+public class InvoiceClass {
 
     //Main Start
     public static void main(String[] args) {
-    
+        // create a Scanner object to obtain input from the command window
+        Scanner input = new Scanner(System.in);
+
+        //Declare Variables
+         //Create two account objects
+        Invoice Item1 = new Invoice();
+        
+        
+        
+        
     }//Main End
     
 }//Invoice Class End
