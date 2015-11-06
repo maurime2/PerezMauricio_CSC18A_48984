@@ -24,10 +24,12 @@
             
             In addition, provide a method named getInvoiceAmount that calculates
             the invoice amount (i.e., multiplies the quantity by the price per
-            item), then returns the amount as a double value. If the quantity is
-            not positive, it should be set to 0. If the price per item is not
-            positive, it should be set to 0.0. Write a test app named
-            InvoiceTest that demonstrates class Invoice’s capabilities.
+            item), then returns the amount as a double value. 
+                If the quantity is not positive, it should be set to 0. 
+                If the price per item is not positive, it should be set to 0.0. 
+            
+            Write a test app named InvoiceTest that demonstrates class Invoice’s 
+            capabilities.
  */
 //Libraries
 package invoiceclass;
@@ -43,11 +45,29 @@ public class InvoiceClass {
         Scanner input = new Scanner(System.in);
 
         //Declare Variables
+        
+        
          //Create two account objects
-        Invoice Item1 = new Invoice();
+        Invoice item1 = new Invoice("001","To Nail",30,30.20);
+        item1.setpartNumber(item1.partNumber);
+        item1.setpartDescription(item1.partDescription);
+        item1.setquantity(item1.quantity);
+        item1.setppItem(item1.ppItem);
+
+        
+        System.out.println(item1.getpartNumber());
+        System.out.println(item1.getpartDescription());
+        System.out.println(item1.getquantity());
+        System.out.println(item1.getppItem());
+
+
+        //Totals
+        getInvoiceAmount total1 = new getInvoiceAmount(item1.quantity,item1.ppItem);
+        total1.setMult();
+        System.out.println(total1.getMult());
         
         
-        
+        //System.out.println(item1.getppItem());
         
     }//Main End
     

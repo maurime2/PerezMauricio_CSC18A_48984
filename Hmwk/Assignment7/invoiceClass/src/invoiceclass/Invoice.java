@@ -18,9 +18,10 @@ public class Invoice {
      public String partDescription;
      public int quantity;
      public double ppItem;
+
     
     //constructor initializes part with paremeter part
-    public Invoice(String partNumber, String partDescription, int quantity, int ppItem)     //Constructor name is class name
+    public Invoice(String partNumber, String partDescription, int quantity, double ppItem)     //Constructor name is class name
     {
         this.partNumber = partNumber;
         this.partDescription = partDescription;
@@ -28,53 +29,53 @@ public class Invoice {
         this.ppItem = ppItem;
     }
     
-                //method to set the Part Number
-                public void setpartNumber(String partNumber)
-                {
-                    this.partNumber = partNumber;
-                }
+                        //method to set the Part Number
+                        public void setpartNumber(String partNumber)
+                        {
+                            this.partNumber = partNumber;
+                        }
 
-                //Method to retrive the Part Number 
-                public String getpartNumber()
-                {
-                    return partNumber;
-                }
-    
-                //method to set the Part Description
-                public void setpartDescription(String partDescription)
-                {
-                    this.partDescription = partDescription;
-                }
+                        //Method to retrive the Part Number 
+                        public String getpartNumber()
+                        {
+                            return partNumber;
+                        }
 
-                //Method to retrive the Part Number 
-                public String getpartDescription()
-                {
-                    return partDescription;
-                }
-    
-                //method to set the quantity
-                public void setquantity(int quantity)
-                {
-                    this.quantity = quantity;
-                }
+                        //method to set the Part Description
+                        public void setpartDescription(String partDescription)
+                        {
+                            this.partDescription = partDescription;
+                        }
 
-                //Method to retrive the quantity 
-                public int getquantity()
-                {
-                    return quantity;
-                }
-                
-                //method to set the quantity
-                public void setppItem(double ppItem)
-                {
-                    this.ppItem = ppItem;
-                }
+                        //Method to retrive the Part Number 
+                        public String getpartDescription()
+                        {
+                            return partDescription;
+                        }
 
-                //Method to retrive the ppItem 
-                public double getppItem()
-                {
-                    return ppItem;
-                }
+                        //method to set the quantity
+                        public void setquantity(int quantity)
+                        {
+                            this.quantity = quantity;
+                        }
+
+                        //Method to retrive the quantity 
+                        public int getquantity()
+                        {
+                            return quantity;
+                        }
+
+                        //method to set the quantity
+                        public void setppItem(double ppItem)
+                        {
+                            this.ppItem = ppItem;
+                        }
+
+                        //Method to retrive the ppItem 
+                        public double getppItem()
+                        {
+                            return ppItem;
+                        }
     
     
 }//End Class Invoice
