@@ -1,0 +1,48 @@
+Assignment #8:
+
+Take our Date class that we created in our 11/5/15 discussion
+	Add six new methods named: 
+						- nextDay
+						- previousDay
+						- nextMonth
+						- previousMonth
+						- nextYear
+						- previousYear.
+
+	nextDay: 
+	Increment the current day to the next day. Y
+	make sure that it will increment to the next month or next year if needed. 
+		- For example: current date is 7/31/2015, the method should increment the date to: 8/1/2015    
+			(since 7/32/2015 is an impossible date). 
+		- Date is 12/31/2015, the method should increment the date to 1/1/2016.
+
+	previousDay:
+	Decrement the current day to the previous day.
+	Make sure that it will decrement to the previous month or previous year if needed.
+		- For example: Current date is 8/1/2015, the method should decrement the date to: 7/31/2015 
+			(since 8/0/2015 is an impossible date). 
+		- Date is 1/1/2016, the method should decrement the date to 12/31/2015.
+
+	nextMonth: 
+	Increment the current month to the next month.
+	Make sure that it will increment to the next year if needed. 
+		- For example: Current date is 12/31/2015, the method should increment the date to: 1/31/2016 
+			(since 13/31/2015 is an impossible date). 
+		- Date is the following: 1/29/2013, as there is no such date: 2/29/2013? 
+			(I'm leaving this up to you to decide how to handle this impossible date since the year 2013 was not a leap year).
+
+	previousMonth:
+	Decrement the current month to the previous month. 
+	Make sure that it will decrement to the previous year if needed.
+		- For example: Current date is 1/31/2016, the method should decrement the date to: 12/31/2015 
+			(since 0/31/2016 is an impossible date). 
+		- Consider leap year. Date is the following: 3/29/2013, as there is no such date: 2/29/2013? 
+			(I'm leaving this up to you to decide how to handle this impossible date since the year 2013 was not a leap year).
+
+	nextYear:
+	Increment the current year to the next year. 
+	
+	previousYear:
+	Decrement the current year to the previous year. 
+		Consider this: Date is the following: 2/29/2000, as there is no such date: 2/29/1999? 
+		(I'm leaving this up to you to decide how to handle this impossible date since the year 1999 was not a leap year).
