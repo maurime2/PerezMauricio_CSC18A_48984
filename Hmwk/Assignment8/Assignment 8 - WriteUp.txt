@@ -1,62 +1,42 @@
-Assignment #8:
+	Mauricio S. Perez
+	CSC18a - 48984
+	Proffesor Paul J. Conrad
+	Assignment 8: Six New Date Methods. 
 
-Take our Date class that we created
-Add six new methods named: 
+	Problem: Take our Date class that we created
+			 Add six new methods named: 
 
-	- nextDay
-	- previousDay
-	- nextMonth
-	- previousMonth
-	- nextYear
-	- previousYear.
+		- nextDay
+		- previousDay
+		- nextMonth
+		- previousMonth
+		- nextYear
+		- previousYear.
 
-nextDay:
-The method should increment the current day to the next day. 
-You will need to make sure that it will increment to the next month or next year if needed. 
-	For example:
-		Date is 7/31/2015, the method should increment the date to: 8/1/2015
-		(since 7/32/2015 is an impossible date). 
-	
-		Date is 12/31/2015, the method should increment the date to 1/1/2016.
-
-previousDay:
-The method should decrement the current day to the previous day. 
-You will need to make sure that it will decrement to the previous month or previous year if needed. 
-	For example:
-		Date is 8/1/2015, the method should decrement the date to: 7/31/2015
-		(since 8/0/2015 is an impossible date). 
-		Date is 1/1/2016, the method should decrement the date to 12/31/2015.
-
-nextMonth:
- Method should increment the current month to the next month. 
- You will need to make sure that it will increment to the next year if needed. 
- 	
-	For example:
-	
-		Date is 12/31/2015, the method should increment the date to: 1/31/2016 (since 	13/31/2015 is an impossible date). 
-		
-		Date is the following: 1/29/2013, as there is no such date: 2/29/2013?
-		(I'm leaving this up to you to decide how to handle this impossible date since the year 2013 was not a leap year).
-
-previousMonth: 
-Method should decrement the current month to the previous month. You will need to make sure that it will decrement to the previous year if needed.
-	
-	For example:
-		
-		Date is 1/31/2016, the method should decrement the date to: 12/31/2015 (since 0/31/2016 is an impossible date).
-		
-		Leap year: Date is the following: 3/29/2013, as there is no such date: 2/29/2013? 
-		(I'm leaving this up to you to decide how to handle this impossible date since the year 2013 was not a leap year).
-
-nextYear:
-Method should increment the current year to the next year. 
-This should be relatively straightforward since there are no special considerations that need to be made when incrementing the year to the next year.
-
-previousYear:
-the method should decrement the current year to the previous year. 
-	
-	What should happen if the date is the following: 2/29/2000, as there is no such date: 2/29/1999? 
-	
-	(I'm leaving this up to you to decide how to handle this impossible date since the year 1999 was not a leap year).
-
-Assignment is due 11/19/15 by the beginning of class, working source code and 3-4 sentence write up must be emailed for up to 40 points.
+	Write Up:
+    
+    In this Problem we had to create 6 classes, each dealing with manipulating
+    an existing date in an element, each with its own set of input validation.
+    
+    nextDay, previousDay, nextMonth, previousMonth, nextYear, previousYear.
+    Each has its own special cases where Leap Years or Incremented Months affect
+    more than just the desiered element change. (See Comments for specific 
+    validation checks and changes). 
+    
+    For the most part, each of theise classes change one element, but when 
+    special cases occure, like 1/30/2004 incrementing a year, we see that we
+    must also change the month and the date for their is no 2/30/2004. The cases
+    in constant question were the dates 2/28/(Leap Year), jumping from the last 
+    day of the year to the first day of the next year and vice versa, changing 
+    dates from months with 30 days to 31 & vice a versa. The input validation 
+    was not as bad once you found the cases.
+    
+    What I learned:
+    It pays off to be neet in the long run. Once I broke down all the special 
+    test cases, each of the date change classes wrote themselves. I only wish I
+    had implemented a user input date change, when I would not need to change 
+    the main file each time i wanted to check the classes for functionality.
+    
+    PS:
+    I think their is a new due date for this assignment. I will implement that
+    feature in the add on portion of the assignment.

@@ -41,26 +41,32 @@ public class Discussion_110515 {
         
         //Tests
                 //NextYear Example
+                System.out.println("\nNextYear ");
                 employee2.getHireDate().nextYear();
                 System.out.println(employee2.toString());
 
                 //previousMonth Example
+                System.out.println("\npreviousMonth ");
                 employee2.getHireDate().previousMonth();
                 System.out.println(employee2.toString());
 
                 //previousYear Example
+                System.out.println("\npreviousYear ");
                 employee2.getHireDate().previousYear();
                 System.out.println(employee2.toString());
 
                 //nextMonth Example
+                System.out.println("\nnextMonth ");
                 employee2.getHireDate().nextMonth();
                 System.out.println(employee2.toString());
 
                 //previousDay Example
+                System.out.println("\npreviousDay ");
                 employee2.getHireDate().previousDay();
                 System.out.println(employee2.toString());
 
                 //nextDay Example
+                System.out.println("\nnextDay ");
                 employee2.getHireDate().nextDay();
                 System.out.println(employee2.toString());
     }//End Main
